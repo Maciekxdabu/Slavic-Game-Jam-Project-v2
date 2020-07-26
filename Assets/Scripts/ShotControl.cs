@@ -41,6 +41,7 @@ public class ShotControl : MonoBehaviour
                 {
                     gameObject.GetComponent<Points>().addPoints(PointsBody);
                 }
+                colliders[i].GetComponent<DieScript>().Die();
                 return;
             }
 
@@ -59,6 +60,7 @@ public class ShotControl : MonoBehaviour
                 {
                     gameObject.GetComponent<Points>().addPoints(PointsBody);
                 }
+                colliders2[i].GetComponent<DieScript>().Die();
                 return;
             }
 
@@ -77,6 +79,7 @@ public class ShotControl : MonoBehaviour
                 {
                     gameObject.GetComponent<Points>().addPoints(PointsBody);
                 }
+                colliders3[i].GetComponent<DieScript>().Die();
                 return;
             }
         }
