@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ad925f94b7cf432428e82365ed988d4b
+guid: 9a1ca61d6f5fd7943a99295b1e171487
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8187084335099077937
-    second: Wii - WarioWare DIY Showcase - Wild Gunman_0
+      213: -2894219192227959636
+    second: NES - Wild Gunman - Backgrounds_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,7 +50,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 261, y: 195, z: 151, w: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -92,22 +92,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wii - WarioWare DIY Showcase - Wild Gunman_0
+      name: NES - Wild Gunman - Backgrounds_0
       rect:
         serializedVersion: 2
-        x: 261
-        y: 195
-        width: 64
-        height: 64
+        x: 0
+        y: 295
+        width: 256
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 135eeb363dd5e9170800000000000000
-      internalID: 8187084335099077937
+      spriteID: cac62299afaa5d7d0800000000000000
+      internalID: -2894219192227959636
       vertices: []
       indices: 
       edges: []
