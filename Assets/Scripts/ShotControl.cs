@@ -12,6 +12,9 @@ public class ShotControl : MonoBehaviour
     [SerializeField] private LayerMask mask2;
     [SerializeField] private LayerMask mask3;
 
+    public int PointsHat, PointsHead, PointsBody;
+    //public float PointsHat_1, PointsHead_1, PointsBody_1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,13 +31,15 @@ public class ShotControl : MonoBehaviour
             {
                 if (colliders[i].tag == "Hat")
                 {
-                    Debug.Log("Hat hit");
-                    gameObject.GetComponent<Points>().addPoints(2);
+                    gameObject.GetComponent<Points>().addPoints(PointsHat);
+                }
+                if (colliders[i].tag == "Head")
+                {
+                    gameObject.GetComponent<Points>().addPoints(PointsHead);
                 }
                 if (colliders[i].tag == "Body")
                 {
-                    Debug.Log("Hit");
-                    gameObject.GetComponent<Points>().addPoints(1);
+                    gameObject.GetComponent<Points>().addPoints(PointsBody);
                 }
                 return;
             }
@@ -44,13 +49,15 @@ public class ShotControl : MonoBehaviour
             {
                 if (colliders2[i].tag == "Hat")
                 {
-                    Debug.Log("Hat hit");
-                    gameObject.GetComponent<Points>().addPoints(2);
+                    gameObject.GetComponent<Points>().addPoints(PointsHat);
+                }
+                if (colliders2[i].tag == "Head")
+                {
+                    gameObject.GetComponent<Points>().addPoints(PointsHead);
                 }
                 if (colliders2[i].tag == "Body")
                 {
-                    Debug.Log("Hit");
-                    gameObject.GetComponent<Points>().addPoints(1);
+                    gameObject.GetComponent<Points>().addPoints(PointsBody);
                 }
                 return;
             }
@@ -60,13 +67,15 @@ public class ShotControl : MonoBehaviour
             {
                 if (colliders3[i].tag == "Hat")
                 {
-                    Debug.Log("Hat hit");
-                    gameObject.GetComponent<Points>().addPoints(2);
+                    gameObject.GetComponent<Points>().addPoints(PointsHat);
+                }
+                if (colliders3[i].tag == "Head")
+                {
+                    gameObject.GetComponent<Points>().addPoints(PointsHead);
                 }
                 if (colliders3[i].tag == "Body")
                 {
-                    Debug.Log("Hit");
-                    gameObject.GetComponent<Points>().addPoints(1);
+                    gameObject.GetComponent<Points>().addPoints(PointsBody);
                 }
                 return;
             }
