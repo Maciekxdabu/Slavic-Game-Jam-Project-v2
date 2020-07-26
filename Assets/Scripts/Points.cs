@@ -14,13 +14,6 @@ public class Points : MonoBehaviour
 
     public Transform Canvas;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         text.text = points.ToString();
@@ -32,6 +25,5 @@ public class Points : MonoBehaviour
         popup.GetComponent<Text>().text = p.ToString();
         GameObject temp = Instantiate(popup, Canvas);
         temp.GetComponent<RectTransform>().position = Input.mousePosition;
-        //temp.GetComponent<Text>().text = p.ToString();
     }
 }

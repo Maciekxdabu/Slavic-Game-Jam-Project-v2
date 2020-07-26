@@ -16,7 +16,6 @@ public class ShotControl : MonoBehaviour
 
     public AudioSource Dead_sound;
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))

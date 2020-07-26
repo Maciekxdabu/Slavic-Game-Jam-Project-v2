@@ -10,17 +10,10 @@ public class Points_Popup : MonoBehaviour
 
     private float lived = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
         Destroy(gameObject, lifetime);
         GetComponent<Text>().CrossFadeAlpha(0, lifetime, false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void FixedUpdate()

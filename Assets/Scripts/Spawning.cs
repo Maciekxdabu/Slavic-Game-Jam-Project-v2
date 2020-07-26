@@ -9,9 +9,6 @@ public class Spawning : MonoBehaviour
 
     private float []cooldowns = { 0, 0, 0, 0, 0, 0};
 
-    //public GameObject Bandit_S1, Bandit_S2;
-
-    // Start is called before the first frame update
     void Start()
     {
         cooldowns[0] = Random.Range(cooldownRange.x, cooldownRange.y);
@@ -22,7 +19,6 @@ public class Spawning : MonoBehaviour
         cooldowns[5] = Random.Range(cooldownRange.x, cooldownRange.y);
     }
 
-    // Update is called once per frame
     void Update()
     {
         for (int i=0; i<bandits.Length; i++)
