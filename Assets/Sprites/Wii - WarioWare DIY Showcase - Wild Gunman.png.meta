@@ -5,6 +5,12 @@ TextureImporter:
   - first:
       213: 8187084335099077937
     second: Wii - WarioWare DIY Showcase - Wild Gunman_0
+  - first:
+      213: 1189544493162795994
+    second: Wii - WarioWare DIY Showcase - Wild Gunman_1
+  - first:
+      213: 7200090263710786388
+    second: Wii - WarioWare DIY Showcase - Wild Gunman_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -108,6 +114,48 @@ TextureImporter:
       bones: []
       spriteID: 135eeb363dd5e9170800000000000000
       internalID: 8187084335099077937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - WarioWare DIY Showcase - Wild Gunman_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad39d7ff96c128010800000000000000
+      internalID: 1189544493162795994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - WarioWare DIY Showcase - Wild Gunman_2
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 227
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453ea3772fbdbe360800000000000000
+      internalID: 7200090263710786388
       vertices: []
       indices: 
       edges: []

@@ -13,19 +13,16 @@ public class ShotControl : MonoBehaviour
     [SerializeField] private LayerMask mask3;
 
     public int PointsHat, PointsHead, PointsBody;
-    //public float PointsHat_1, PointsHead_1, PointsBody_1;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioSource Dead_sound;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
+            GetComponent<AudioSource>().Play();
+
             Collider2D[] colliders = Physics2D.OverlapCircleAll((Vector2)targetPoint.position, checkRadius, mask1);
             for (int i = 0; i<colliders.Length; i++)
             {
@@ -41,6 +38,7 @@ public class ShotControl : MonoBehaviour
                 {
                     gameObject.GetComponent<Points>().addPoints(PointsBody);
                 }
+                Dead_sound.Play();
                 colliders[i].GetComponent<DieScript>().Die();
                 return;
             }
@@ -60,6 +58,7 @@ public class ShotControl : MonoBehaviour
                 {
                     gameObject.GetComponent<Points>().addPoints(PointsBody);
                 }
+                Dead_sound.Play();
                 colliders2[i].GetComponent<DieScript>().Die();
                 return;
             }
@@ -79,6 +78,7 @@ public class ShotControl : MonoBehaviour
                 {
                     gameObject.GetComponent<Points>().addPoints(PointsBody);
                 }
+                Dead_sound.Play();
                 colliders3[i].GetComponent<DieScript>().Die();
                 return;
             }
